@@ -169,6 +169,14 @@ if ('addEventListener' in document) {
 $(".panel").css({
   'height':'600px'
 })
+$("#panel-04").css({
+  'height':'768px'
+})
+$("#panel-reg").css({
+  'height':'768px'
+})
+
+
 
 //calPTLK(1);
 
