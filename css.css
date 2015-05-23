@@ -409,12 +409,12 @@ body{
 
 .bsq-wrapper{
   width: 1024px;
-  height: 768px;  
+  height: 600px;  
 }
 
 .bsq-panel{
   width: 1024px;
-  height: 768px;
+  height: 600px;
   
   display: none;
 }

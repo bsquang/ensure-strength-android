@@ -167,7 +167,7 @@ if ('addEventListener' in document) {
 
 
 $(".panel").css({
-  'min-height':'768px'
+  'height':'600px'
 })
 
 //calPTLK(1);
@@ -698,7 +698,7 @@ function nextBUTTON() {
 	//})
 	
 	$("#end-bar").css({
-	  'top' : '430px',
+	  'top' : '260px',
 	  'left' : '370px',
 	  '-webkit-transform':'scale(1)'
 	})
