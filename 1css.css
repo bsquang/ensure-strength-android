@@ -576,8 +576,9 @@ body{
 }
 
 .ios-button-toolbar{
+    
     width: 160px;
-	
+    
     line-height: 30px;
     margin: 5px 5px;
     padding: 0 10px;

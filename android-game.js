@@ -124,12 +124,6 @@ function editEMPLOYEE(){
   }
 }
 
-function shortCall(){
-  current = 4;
-  $('#end-bar').show();
-  nextBUTTON();
-}
-
 
 var list_data_user_created = []; // User data-add
 var list_data_autocomplete = []; // Sync data-autocomplete
@@ -175,6 +169,14 @@ if ('addEventListener' in document) {
 $(".panel").css({
   'height':'600px'
 })
+$("#panel-04").css({
+  'height':'768px'
+})
+$("#panel-reg").css({
+  'height':'768px'
+})
+
+
 
 //calPTLK(1);
 
@@ -191,34 +193,48 @@ function stepAnimation2() {
   
   if (cntstep2 == 2) {
 	$("#end-01-slider-01-01").fadeIn();
+  }
+  if (cntstep2 == 3) {
 	$("#end-01-slider-01-02").fadeIn();
+  }
+  if (cntstep2 == 4) {
 	$("#end-01-slider-01-03").fadeIn();
+  }
+  if (cntstep2 == 5) {
 	$("#end-01-slider-01-04").fadeIn();
+  }
+  if (cntstep2 == 6) {
 	$("#end-01-slider-01-05").fadeIn();
   }
-
   
-  if (cntstep2 == 3) {
+  if (cntstep2 == 7) {
 	$("#end-01-ele-01").css({
 	  'width':'100%'
 	})
   }
-  if (cntstep2 == 4) {
+  if (cntstep2 == 8) {
 	$('#end-01-ele-03').fadeIn();
   }
 
   
-  if (cntstep2 == 5) {
+  if (cntstep2 == 9) {
 	$("#end-01-slider-02-01").fadeIn();
+  }
+  if (cntstep2 == 10) {
 	$("#end-01-slider-02-02").fadeIn();
+  }
+  if (cntstep2 == 11) {
 	$("#end-01-slider-02-03").fadeIn();
+  }
+  if (cntstep2 == 12) {
 	$("#end-01-slider-02-04").fadeIn();
+  }
+  if (cntstep2 == 13) {
 	$("#end-01-slider-02-05").fadeIn();
   }
- 
   
   
-  if (cntstep2 >= 5) {
+  if (cntstep2 >= 13) {
 	
 	setTimeout(function(){
 	  
@@ -312,10 +328,9 @@ function aniEND03() {
 		if (countEnd02 == 1) {
 		  $('#end-02-button-02').fadeIn();
 		  $('#end-02-button-02').click(function(){randomHIDEElement()});
-		  
+		}else if (countEnd02 == 2) {
 		  $('#end-02-button-03').fadeIn();
 		  $('#end-02-button-03').click(function(){randomHIDEElement()});
-		  
 		}	  
 		
 	  })
@@ -633,7 +648,6 @@ function checkPTLK() {
   user.name = $("#input-user-name").val();
   user.age = $("#input-user-birth").val();
   user.sex = $("#select-user-gender").val();
-  user.milkType = $("#select-user-milk").val();
   
   user.phone = $("#input-user-phone").val();
   user.address = $("#input-user-address").val();  

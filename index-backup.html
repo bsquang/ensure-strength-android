@@ -22,7 +22,7 @@
     </head>
     <body>
       
-      <div class='wrapper' style='height: 600px;'>
+      <div class='wrapper'>
         
         <div class='panel' id='panel-reg' bsq-id='100' style=''>
           <div class='bsq-row ios-toolbar ios-toolbar-dark'>
@@ -92,19 +92,6 @@
               
               <input id='input-pull' type='number' style='font-size: 20px;padding: 15px;width: 100%; margin-bottom: 5px;' placeholder='Nhập vào kết quả đo lực kéo' />
               
-              <div class='group' style='  width: 100%;  background: white;  padding: 10px;'>
-                <p style='float: left;  padding: 10px 20px;  font-size: 20px;'>Sữa đang sử dụng:</p>
-                <select id='select-user-milk' style='width: 60%;padding: 10px 20px;font-size: 20px; float: left'>
-                  <option value=0>SurePrevent</option>
-                  <option value=1>EnPlus</option>
-                  <option value=2>EnsureGold</option>
-                  <option value=3>Ensure Xách Tay</option>
-                  <option value=4>Sữa tươi</option>
-                  <option value=5>Chưa dùng sữa</option>
-                  <option value=5>Khác</option>
-                </select>
-              </div>
-              
             </div>
             <div class='bsq-row group' style='margin-top: 10px;'>              
               <div class='col-right col-30'>                      
@@ -116,14 +103,14 @@
         <!--END-->
         
         <!--DIAGRAM PULL-->
-        <div class='panel' id='panel-05' style='background: white; height: 600px' bsq-id='2' >
+        <div class='panel' id='panel-05' style='background: white;' bsq-id='2' >
           <div class='bsq-row ios-toolbar ios-toolbar-dark'>
             <div class='ios-button-toolbar animated2' style='left: 0; top: 0;' onclick='prevBUTTON()'>Quay lại</div>
             <p style='text-align: center;line-height: 42px;height: 42px;'>  </p>
             <!--<div class='ios-button-toolbar' style='right: 0; top: 0;' onclick='controlBUTTON()'>Bảng điều khiển</div>-->
           </div>          
             
-          <div class='bsq-row group' style='-webkit-transform: scale(0.8) translateY(-92px);'>
+          <div class='bsq-row group'>
             <div class='col-70 col-left'>
               <div class='bsq-row' style='text-align: center;'>
                 <h3>TUỔI THỂ LỰC</h3>
@@ -167,8 +154,7 @@
           </div>
           
           <div class='bsq-row group' style='padding: 10px;  position: absolute;  left: 0;  bottom: 0;'>
-            <div class='ios-button ios-button-confirm col-right col-20 animated2' onclick='shortCall()'>ShortCall</div>
-            <div class='ios-button ios-button-confirm col-right col-20 animated2' onclick='nextBUTTON()'>FullCall</div>
+            <div class='ios-button ios-button-confirm col-right col-20 animated2' onclick='nextBUTTON()'>Tiếp</div>
           </div>
         </div>
         <!--END-->
@@ -180,7 +166,7 @@
             <p style='text-align: center;line-height: 42px;height:42px'></p>
             <!--<div class='ios-button-toolbar' style='right: 0; top: 0;' onclick='controlBUTTON()'>Bảng điều khiển</div>-->
           </div>
-          <div class='bsq-row' style='  height: 768px;  -webkit-transform: scale(0.8) translateY(-146px);'>
+          
           <h1 style='position: absolute;left: 340px;top: 70px;color: #14578D;'>SUY GIẢM SỨC KHỎE</h1>
           
           <div class='animated-1s' id='end-01-ele-01' style="background: url('resources/end/END-01.png'); width: 0%; height: 100%; position: absolute; left: 0; top: 0;" ></div>
@@ -207,8 +193,6 @@
           <img id='end-01-slider-02-03' src='resources/end/SLIDER-02 (3).png' style='position: absolute; top: 470px; left: 620px; display: none'/>
           <img id='end-01-slider-02-04' src='resources/end/SLIDER-02 (4).png' style='position: absolute; top: 530px; left: 620px; display: none'/>
           <img id='end-01-slider-02-05' src='resources/end/SLIDER-02 (5).png' style='position: absolute; top: 590px; left: 620px; display: none'/>
-		
-		</div>
           
           <br>
           <div class='bsq-row group' style='padding: 10px;position: absolute;bottom: 0;'>
@@ -241,7 +225,6 @@
             <!--<div class='ios-button-toolbar' style='right: 0; top: 0;' onclick='controlBUTTON()'>Bảng điều khiển</div>-->
           </div>
           
-		<div class='bsq-row' style='  height: 768px;  -webkit-transform: scale(0.8) translateY(-166px);'>
           <div id='end-02-ele-bgr' style="background: url('resources/end/END-02.png'); width: 100%; height: 100%; position: absolute; left: 0; top: 0;" ></div>
           <img id='end-02-ele-man' style='position: absolute; left: 630px; top: 240px; display: none;' src='resources/end/MAN.png' />
           
@@ -261,7 +244,6 @@
           <img id='end-02-button-02' style='position: absolute;left:280px; top:380px; display: none;' src='resources/end/ELE-2 (2).png' />
           <img id='end-02-button-03' style='position: absolute;left:110px; top:470px; display: none;' src='resources/end/ELE-2 (3).png' />
           
-          </div>
           <br>
           <div class='bsq-row group' style='padding: 10px;position: absolute;bottom: 0;'>
             <div id='end-02-button-next' style='display: none;'  class='ios-button ios-button-confirm col-right col-20 animated2' onclick='nextBUTTON()'>Tiếp</div>
@@ -276,7 +258,6 @@
             <!--<div class='ios-button-toolbar' style='right: 0; top: 0;' onclick='controlBUTTON()'>Bảng điều khiển</div>-->
           </div>
           
-		<div class='bsq-row' style='  height: 768px;  -webkit-transform: scale(0.8) translateY(-186px);'>
           <div id='end-03-ele-bgr' style="background: url('resources/end/END-03.png'); width: 100%; height: 100%; position: absolute; left: 0; top: 0;" ></div>          
           
           
@@ -295,7 +276,7 @@
           <!--<div id='end-bar' style='position: absolute; width: 114px; height: 254px; top: 430px;left: 370px; background: url("resources/end/ENERGYBAR-BGR.png")'>            
             <div id='end-bar-inside' style='position: absolute; left: 10px; bottom: 8px; width: 95px; height: 202px; background: url("resources/end/ENERGYBAR-ELE.png"); background-position: bottom;'></div>
           </div>-->
-         </div>
+          
           
           <br>
           <div class='bsq-row group' style='padding: 10px;position: absolute;bottom: 0;'>
@@ -314,7 +295,7 @@
           <div id='end-03-ele-bgr' style="background: url('resources/end/END-04-BGR.png'); width: 100%; height: 100%; position: absolute; left: 0; top: 0;" ></div>
           <img class='end-03-man' src="resources/end/FINAL-MAN.png" style="position: absolute; left: 660px; top: 170px;" />
           <img class='end-03-woman' src="resources/end/FINAL-WOMAN.png" style="position: absolute; left: 160px; top: 80px;" />
-          <img id='end-03-ele-bottom' src='resources/end/BOTTOM-FINAL.png' style="width: 100%; position: absolute; left: 0; bottom: -1px;" />
+          <img id='end-03-ele-bottom' src='resources/end/BOTTOM-FINAL.png' style="width: 100%; position: absolute; left: 0; bottom: 0;" />
           
           <br>
           <div class='bsq-row group' style='padding: 10px;position: absolute;bottom: 0;'>
@@ -323,26 +304,23 @@
         </div>
         <!--END-->
         <!--FINAL PANEL6-->
-        
-        <!--OLD CHOICE MILK-->
-        <!--<div class='panel' id='panel-10' bsq-id='102'>                 -->
-        <!--  -->
-        <!--  <div class='group' style='width: 200px; margin: auto; padding-top: 100px'>-->
-        <!--    <p style='text-align: center;padding: 10px;'>Khách hàng đang dùng loại sữa gì?</p>-->
-        <!--    <input class='ios-button ios-button-confirm' style='width: 100%; margin-bottom: 10px' type='button' value='SurePrevent' onclick='setUserMilk(0);'/><br>-->
-        <!--    <input class='ios-button ios-button-confirm' style='width: 100%; margin-bottom: 10px' type='button' value='EnPlus' onclick='setUserMilk(1);'/><br>-->
-        <!--    <input class='ios-button ios-button-confirm' style='width: 100%; margin-bottom: 10px' type='button' value='EnsureGold' onclick='setUserMilk(2);'/><br>-->
-        <!--    <input class='ios-button ios-button-confirm' style='width: 100%; margin-bottom: 10px' type='button' value='Ensure Xách Tay' onclick='setUserMilk(3);'/><br>-->
-        <!--    <input class='ios-button ios-button-confirm' style='width: 100%; margin-bottom: 10px' type='button' value='Sữa tươi' onclick='setUserMilk(4);'/><br>-->
-        <!--    <input class='ios-button ios-button-confirm' style='width: 100%; margin-bottom: 10px' type='button' value='Chưa dùng sữa' onclick='setUserMilk(5);'/><br>-->
-        <!--    <input class='ios-button ios-button-confirm' style='width: 100%; margin-bottom: 10px' type='button' value='Khác' onclick='setUserMilk(6);'/><br>-->
-        <!--    -->
-        <!--  </div>-->
-        <!--  -->
-        <!--  -->
-        <!--</div>-->
-        
         <div class='panel' id='panel-10' bsq-id='102'>                 
+          
+          <div class='group' style='width: 200px; margin: auto; padding-top: 100px'>
+            <p style='text-align: center;padding: 10px;'>Khách hàng đang dùng loại sữa gì?</p>
+            <input class='ios-button ios-button-confirm' style='width: 100%; margin-bottom: 10px' type='button' value='SurePrevent' onclick='setUserMilk(0);'/><br>
+            <input class='ios-button ios-button-confirm' style='width: 100%; margin-bottom: 10px' type='button' value='EnPlus' onclick='setUserMilk(1);'/><br>
+            <input class='ios-button ios-button-confirm' style='width: 100%; margin-bottom: 10px' type='button' value='EnsureGold' onclick='setUserMilk(2);'/><br>
+            <input class='ios-button ios-button-confirm' style='width: 100%; margin-bottom: 10px' type='button' value='Ensure Xách Tay' onclick='setUserMilk(3);'/><br>
+            <input class='ios-button ios-button-confirm' style='width: 100%; margin-bottom: 10px' type='button' value='Sữa tươi' onclick='setUserMilk(4);'/><br>
+            <input class='ios-button ios-button-confirm' style='width: 100%; margin-bottom: 10px' type='button' value='Chưa dùng sữa' onclick='setUserMilk(5);'/><br>
+            <input class='ios-button ios-button-confirm' style='width: 100%; margin-bottom: 10px' type='button' value='Khác' onclick='setUserMilk(6);'/><br>
+            
+          </div>
+          
+          
+        </div>
+        <div class='panel' id='panel-10' bsq-id='103'>                 
           
           <div class='group' style='width: 200px; margin: auto; padding-top: 100px'>
             <p style='text-align: center;padding: 10px;'>Đánh giá khách hàng:</p>
@@ -370,7 +348,7 @@
             <input id='btt-sync' class='ios-button ios-button-confirm col-30 col-right' type='button' value='Tải dữ liệu lên máy chủ' onclick='syncData();'>            
           </div>
           
-          <div class='bsq-row group' style='padding: 10px; height: 460px; border: 1px solid black; overflow: auto; display: none;' id='panel-employee-info'>
+          <div class='bsq-row group' style='padding: 10px; height: 500px; border: 1px solid black; overflow: auto; display: none;' id='panel-employee-info'>
             
             <p id='employee-info-nameid' style="font-size: 24px;font-weight: bold;">0123456:Nguyen Dong Quang</p>            
             <br>
@@ -400,7 +378,7 @@
             
           </div>
           
-          <div class='bsq-row group' style='padding: 10px; height: 460px; border: 1px solid black; overflow: auto; display: none;' id='panel-list-user'>
+          <div class='bsq-row group' style='padding: 10px; height: 500px; border: 1px solid black; overflow: auto; display: none;' id='panel-list-user'>
             <table>
               <thead>
                 <tr>
@@ -477,7 +455,7 @@
         
         
         <div style='position: absolute;top:0;left: 0;z-index: 99;'>
-          <div id='end-bar' class='animated-1s' style='display: none;  position: absolute;width: 114px;height: 254px;top: 380px;left: -10px;background: url("resources/end/ENERGYBAR-BGR.png");-webkit-transform: scale(0.7);'>            
+          <div id='end-bar' class='animated-1s' style='display: none;  position: absolute;width: 114px;height: 254px;top: 540px;left: -10px;background: url("resources/end/ENERGYBAR-BGR.png");-webkit-transform: scale(0.7);'>            
             <div id='end-bar-inside' style='position: absolute; left: 10px; bottom: 8px; width: 95px; height: 202px; background: url("resources/end/ENERGYBAR-ELE.png"); background-position: bottom;'>
               
               <p style='position: absolute;top: 0;color: white;left:50%;top:5px;-webkit-transform: translateX(-50%);text-shadow: 1px 1px 1px #000;font-weight: bold;  font-size: 24px;' id='end-bar-inside-text'>30%</p>
@@ -519,7 +497,7 @@
       <!--<script src="database.js"></script>      -->
       
       <script type="text/javascript" src="line.js?89"></script>
-      <script src="game.js?9"></script>
+      <script src="game2.js?9"></script>
       
       
       
