@@ -126,7 +126,15 @@ function editEMPLOYEE(){
 
 function shortCall(){
   current = 4;
+  
+  
+  if (total.percent > 95) {	
+	current = 5; 
+	//gotoPanel(current);  
+  }
+  
   $('#end-bar').show();
+  
   nextBUTTON();
 }
 
